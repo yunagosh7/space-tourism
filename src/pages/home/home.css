@@ -1,3 +1,16 @@
 .home {
-    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-image: url('../../assets/home/background-home-mobile.jpg');
 }
+
+@media screen and (min-width: 768px) {
+    .home {
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home {
+        background-image: url('../../assets/home/background-home-desktop.jpg');
+    }
+}
+
