@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-explore {
+    @apply w-72 h-72 rounded-full bg-white text-3xl
+  }
+
+  .subheading1 {
+    @apply text-[1.75rem];
+  }
+  .subheading2 {
+    @apply text-sm tracking-[2.35px];
+  }
+}
+
+:root {
+  --primary-black: #0b0d17;
+  --primary-light-lilac: #d0d6f9;
+  --white: #fff;
+  --font-primary: "Bellefair", serif;
+  --font-secondary: "Barlow Condensed", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 9.375rem;
+}
+
+h2 {
+  font-size: 6.25rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+  letter-spacing: 4.75px;
+  font-stretch: 100%;
+  font-family: var(--font-secondary);
+  color: var(--primary-light-lilac);
+}
+
+
+.btn-explore {
+  color: var(--primary-black);
+  font-family: var(--font-primary);
+}
+
+.subheading1,
+.subheading2 {
+  font-family: var(--font-secondary);
+}
+
+.text-lilac {
+  color: var(--primary-light-lilac);
+}
