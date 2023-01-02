@@ -6,15 +6,19 @@
 
 @layer components {
   .btn-explore {
-    @apply w-36 h-36 rounded-full bg-white text-xl  md:w-60 md:h-60 md:text-3xl
+    @apply w-36 h-36 rounded-full bg-white text-xl  md:w-60 md:h-60 md:text-3xl;
   }
 
-  .home {
-    @apply text-center w-screen h-screen bg-no-repeat bg-cover
+  .page {
+    @apply w-screen h-screen bg-no-repeat bg-cover;
   }
 
   .home-content {
-    @apply w-full h-full  flex flex-col justify-between items-center py-16 px-10 
+    @apply w-full h-full  flex flex-col justify-between items-center py-16 px-10;
+  }
+
+  .nav {
+    @apply flex absolute flex-col pl-2 pt-12  h-screen w-[70vw] md:flex-row md:static md:w-auto md:h-full md:pt-0 md:px-8 lg:px-16;
   }
 }
 
@@ -62,7 +66,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -80,8 +84,27 @@ h5 {
   font-family: var(--font-secondary);
 }
 
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.subheading1 {
+  font-size: 1.75rem;
+  font-family: var(--font-primary);
+}
+
+.subheading2 {
+  font-size: 0.75rem;
+  font-family: var(--font-secondary);
+  letter-spacing: 2.7px;
+}
+
 @media screen and (min-width: 768px) {
-  h1{
+  h1 {
     font-size: 9.375rem;
   }
 
@@ -102,7 +125,7 @@ h5 {
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   h1 {
     font-size: 9.375rem;
   }
@@ -120,23 +143,8 @@ h5 {
   }
 
   h5 {
-    font-size:1.75rem;
-  }
-
-  .subheading1 {
     font-size: 1.75rem;
   }
-
-  .subheading2 {
-    font-size: .75rem;
-    letter-spacing: 2.7px;
-  }
-}
-
-
-.subheading1,
-.subheading2 {
-  font-family: var(--font-secondary);
 }
 
 .text-lilac {

@@ -1,14 +1,5 @@
-.nav {
-    backdrop-filter: blur(81px);
-    font-family: var(--font-secondary);
-    letter-spacing: 2.7px;
-    right: -500px;
-    top: 0;
-    transition: all .3s;
-}
-
-.nav.active {
-    right: 0;
+nav a.active {
+    border-right: 4px solid #fff;
 }
 
 .btn-explore {
@@ -36,3 +27,23 @@
     transform: scale(1.5);
 }
 
+.nav {
+    backdrop-filter: blur(81px);
+    font-family: var(--font-secondary);
+    letter-spacing: 2.7px;
+    right: -500px;
+    top: 0;
+    transition: all .3s;
+}
+
+.nav.active {
+    right: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    nav a.active {
+        border-right: none;
+        border-bottom: 4px solid #fff;
+    }
+}
