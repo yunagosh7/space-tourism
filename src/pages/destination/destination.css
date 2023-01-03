@@ -1,3 +1,11 @@
+.planet-links > .active {
+    border-bottom: 4px solid #fff;
+}
+/* .travel-info {
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+}
+ */
+
 .destination {
     background-image: url('../../assets/destination/background-destination-mobile.jpg');
 }

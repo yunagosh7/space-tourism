@@ -12,7 +12,7 @@ export const Navbar = () => {
   
   return (
     <header className="w-screen z-50 fixed flex items-center justify-between px-8 pt-8 md:pt-0 md:pl-8 md:pr-0 lg:mt-12 ">
-      <img src={Logo} className="h-12 w-12 " alt="Logo" />
+      <img src={Logo} className="h-10 w-10 md:h-12 md:w-12 " alt="Logo" />
 
       <nav className={`nav ${toggle ? "active" : ""}  `}>
         <img
@@ -23,16 +23,16 @@ export const Navbar = () => {
             setToggle(false);
           }}
         />
-        <NavLink onClick={()=>setPath("/")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path === "/" && "active"} `} to="/">
+        <NavLink onClick={()=>setPath("/")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path === "/" ? "active" : ""} `} to="/">
           00 HOME
         </NavLink>
-        <NavLink onClick={()=>setPath("/destination")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path == "/destination" && "active"} `} to="/destination">
+        <NavLink onClick={()=>setPath("/destination")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path == "/destination" ? "active" : ""} `} to="/destination">
           01 DESTINATION
         </NavLink>
-        <NavLink onClick={()=>setPath("/crew")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path == "/crew" && "active"} `} to="/crew">
+        <NavLink onClick={()=>setPath("/crew")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path == "/crew" ? "active" : ""} `} to="/crew">
           02 CREW
         </NavLink>
-        <NavLink onClick={()=>setPath("/technology")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path == "/technology" && "active"} `} to="/technology">
+        <NavLink onClick={()=>setPath("/technology")} className={`ml-4 my-8 py-2 pl-4 md:mb-0 md:pb-8 ${path == "/technology" ? "active" : ""} `} to="/technology">
           03 TECHNOLOGY
         </NavLink>
       </nav>
