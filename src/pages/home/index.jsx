@@ -3,8 +3,8 @@ import "./home.css";
 
 export const Home = () => {
   return (
-    <div className="page text-center home">
-      <section className="home-content lg:flex lg:flex-row lg:p-20">
+    <section className="page text-center home">
+      <div className="home-content lg:flex lg:flex-row lg:p-20">
         <article className="mt-20 flex flex-col items-center lg:w-3/6  ">
           <h5 className="text-lilac">SO, YOU WANT TO TRAVEL TO</h5>
           <h1 className="">SPACE</h1>
@@ -16,7 +16,7 @@ export const Home = () => {
           </p>
         </article>
         <button className="btn-explore ">EXPLORE</button>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };

@@ -3,16 +3,16 @@ import { createContext, useState } from 'react';
 
 export const DataContext = createContext();
 
+import data from '../../db/data.json'
 
 export const DataContextProvider = ({children}) => {
-    const [data, setData] = useState(null);
+    
 
 
     return (
     <DataContext.Provider 
         value={{
             data,
-            setData
         }}
     >
         {children}

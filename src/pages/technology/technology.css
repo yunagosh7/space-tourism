@@ -1,0 +1,20 @@
+.technology {
+    background-image: url('../../assets/technology/background-technology-mobile.jpg');
+}
+
+.buttons-container > button.active{
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (min-width:768px) {
+    .technology {
+        background-image: url('../../assets/technology/background-technology-tablet.jpg');
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .technology {
+        background-image: url('../../assets/technology/background-technology-desktop.jpg');
+    }
+}

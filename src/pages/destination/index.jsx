@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { DataContext } from "../../context/data/DataContext";
-import { fetchData } from "../../functions";
 import "./destination.css";
 import MoonImage from "../../assets/destination/image-moon.webp";
 import MarsImage from "../../assets/destination/image-mars.webp";
@@ -8,12 +7,11 @@ import EuropaImage from "../../assets/destination/image-europa.webp";
 import TitanImage from "../../assets/destination/image-titan.webp";
 
 export const Destinations = () => {
-  const [destinationsData, setDestinationsData] = useState(null);
+  const {data} = useContext(DataContext);
+  const [destinationsData, setDestinationsData] = useState(data.destinations);
   const [actualPlanet, setActualPlanet] = useState(0);
 
-  useEffect(() => {
-    fetchData(setDestinationsData, "destinations");
-  }, []);
+
 
   return (
     <section className="page h-auto md:h-screen destination  pt-24 lg:pt-52">
@@ -24,7 +22,7 @@ export const Destinations = () => {
               <span className="number opacity-25 font-bold ">01</span> PICK YOUR
               STATION
             </h5>
-
+            
             <img
               src={`${
                 actualPlanet == 0
@@ -96,7 +94,6 @@ export const Destinations = () => {
           </div>
         </div>
       )}
-      {destinationsData && console.log(destinationsData[actualPlanet])}
     </section>
   );
 };
