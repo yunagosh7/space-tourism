@@ -20,7 +20,7 @@ export const Crew = () => {
           CREW
         </h5>
         <div className="text-center relative flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:h-full lg:justify-center items-center">
-          <div className=" lg:h-full lg:pt-20 lg:w-3/6">
+          <div className=" lg:h-full lg:pt-20 lg:w-5/12">
             <img
               src={`${
                 commander == 0
@@ -35,7 +35,7 @@ export const Crew = () => {
               alt=""
             />
           </div>
-          <div className="flex flex-col md:flex-col-reverse lg:w-3/6">
+          <div className="flex flex-col md:flex-col-reverse lg:w-5/12">
             <div className="selector-container  lg:mt-20">
               <button
                 onClick={() => setCommander(0)}
